@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  resource :securities, only: [:show] do
-    resources :passwords, only: [:index]
-  end
-
   root 'static_pages#home'
   get 'static_pages/help'
   get 'static_pages/about'
